@@ -1,5 +1,6 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";  
+import{ Link } from 'react-router-dom'
 const Navbar = () =>{
     return(
       <nav className="navbar navbar-expand-lg navbar-dark bg-info">
@@ -20,7 +21,8 @@ const Navbar = () =>{
               <NavLink className="nav-link" exact to="/contact">Contact</NavLink>
             </li>
           </ul>
-        </div>
+        </div> 
+         <Link to='/users/add' className="btn btn-outline-light">Add User</Link>
       </div>
     </nav>
     )
